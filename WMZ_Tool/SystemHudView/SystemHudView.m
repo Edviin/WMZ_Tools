@@ -56,7 +56,7 @@
 }
 
 -(void) showSuccessHudViewWithTitle:(NSString *)title{
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[@"WMZ_ToolDefine.bundle" stringByAppendingPathComponent:@"Request_Success"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[@"ToolBundlee.bundle" stringByAppendingPathComponent:@"Request_Success"]]];
     imageView.frame = CGRectMake(0, 0, 37, 37);
     _progressView.mode = MBProgressHUDModeCustomView;
     _progressView.customView = imageView;
@@ -69,7 +69,7 @@
 
 -(void) showFailedHudViewWithTitle:(NSString *)title{
     
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[@"WMZ_ToolDefine.bundle" stringByAppendingPathComponent:@"Request_Error"]]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[@"ToolBundle.bundle" stringByAppendingPathComponent:@"Request_Error"]]];
     imageView.frame = CGRectMake(0, 0, 37, 37);
     
     _progressView.mode = MBProgressHUDModeCustomView;

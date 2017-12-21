@@ -10,10 +10,12 @@ s.requires_arc = true
 s.ios.deployment_target = '8.0'
 s.source_files = 'WMZ_Tool/WMZ_ToolDefine.h'
 s.resource = "WMZ_Tool/ToolBundle.bundle"
-s.frameworks = 'UIKit','MobileCoreServices', 'AssetsLibrary'
-	   s.subspec 'Category' do |category|
-    	category.source_files = 'WMZ_Tool/Category/*.{h,m}'
-   	   end
-   	 
+s.frameworks = 'UIKit'
+s.subspec 'Category' do |ss|
+    	ss.source_files = 'WMZ_Tool/Category/*.{h,m}'
+    end 
+     s.subspec 'SystemHudView' do |sss|
+    	sss.source_files = 'WMZ_Tool/SystemHudView/*.{h,m}'
+    end  	 
 end
 
