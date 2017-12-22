@@ -72,14 +72,14 @@
 + (NSData *)DESDecrypt:(NSData *)data WithKey:(NSString *)key;
 /**
  base64格式字符串转换为文本数据 base64解密
- 
+
  @param string 被加密的string
  @return 返回解密后的data
  */
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
 /**
  文本数据转换为base64格式字符串
- 
+
  @param data 需要加密的data
  @return 加密后字符串
  */
@@ -107,7 +107,7 @@
 /**
  *  根据传入的表情代码，获得包括图片真实路径的内容
  *
- *
+*
  *  @return 包括真实表情图片的内容
  */
 -(NSString *) emojToRealPath;
