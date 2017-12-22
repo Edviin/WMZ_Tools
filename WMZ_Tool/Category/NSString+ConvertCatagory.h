@@ -71,21 +71,19 @@
  */
 + (NSData *)DESDecrypt:(NSData *)data WithKey:(NSString *)key;
 /**
- *  字符串base64加密
+ *  base64格式字符串转换为文本数据 base64解密
  *
- *  @param string 文本数据base64加密
+ *  @param data 被加密的data
  *
- *  @return 返回加密后的data
+ *  @return 返回解密后的data
  */
 + (NSData *)dataWithBase64EncodedString:(NSString *)string;
-
-//文本数据转换为base64格式字符串
 /**
- *  data base64解密
+ *   文本数据转换为base64格式字符串
  *
- *  @param data 被解密的data
+ *  @param string 文本数据
  *
- *  @return 返回解密后的字符串
+ *  @return 返回加密后的字符串
  */
 + (NSString *)base64EncodedStringFrom:(NSData *)data;
 
@@ -111,7 +109,7 @@
 /**
  *  根据传入的表情代码，获得包括图片真实路径的内容
  *
-*
+ *
  *  @return 包括真实表情图片的内容
  */
 -(NSString *) emojToRealPath;
@@ -186,3 +184,4 @@
 //-------------------------如果调用报错,请查看消息内部内容----------------------------------------------------
 + (NSString *)replaceUnicode:(NSString *)unicodeStr;
 @end
+
